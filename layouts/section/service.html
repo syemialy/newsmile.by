@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+    <body id="page-top" class="index">
+        {{ partial "nav.html" . }}
+        {{ partial "hero.html" . }}
+        <section id="main">
+        	<div>
+        		<h1 id="title">{{ .Data.Plural }}</h1>           
+                {{ range .Data.Pages }}
+                	{{ .Render "summary" }}
+            	{{ end }}
+        	</div>
+        </section>
+        {{ partial "contact.html" . }}
+        {{ partial "footer.html" . }}
+        {{ partial "modals.html" . }}
+        {{ partial "js.html" . }}
+    </body>
+</html>

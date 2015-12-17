@@ -51,41 +51,10 @@ theme = "hugo-agency-theme"
 		buttonText = "Узнать Больше"
 
 
-	# Services section
+	# Services section is assembled from content type 'service'
 	[params.services]
-		title = "Услуги"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
-
-		[[params.services.list]]
-			icon = "fa-shopping-cart"
-			title = "Терапия"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-
-		[[params.services.list]]
-			icon = "fa-laptop"
-			title = "Хирургия"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-
-		[[params.services.list]]
-			icon = "fa-lock"
-			title = "Ортопедия"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-
-		[[params.services.list]]
-			icon = "fa-lock"
-			title = "Ортодонтия"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-
-		[[params.services.list]]
-			icon = "fa-lock"
-			title = "Рентген"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-
-		[[params.services.list]]
-			icon = "fa-lock"
-			title = "Диагностика"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-
+			title="Услуги"
+			subtitle="lorem ipsum"
 
 	# Portfolio section
 	[params.portfolio]

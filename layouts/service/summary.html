@@ -1,0 +1,9 @@
+<div class="summary">
+    <h4><a href="{{ .RelPermalink }}#{{ .Title }}">{{ .Params.name }}</a></h4>
+    <p class="text-left">
+    {{ .Summary }}
+    {{ if .Truncated }}
+		<a href="{{ .RelPermalink }}#{{ .Title }}" alt="узнать больше о {{ .Params.name }}"> <i class="fa fa-book"></i>&nbsp;...</a>
+	{{ end }}
+    </p>
+</div>
