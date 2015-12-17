@@ -54,7 +54,7 @@ theme = "hugo-agency-theme"
 	# Services section is assembled from content type 'service'
 	[params.services]
 			title="Услуги"
-			subtitle="lorem ipsum"
+			subtitle="НьюСмайл предоставляет широкий спектр комплексных стоматологических услуг."
 
 	# Portfolio section
 	[params.portfolio]
@@ -63,7 +63,7 @@ theme = "hugo-agency-theme"
 		# at the root of this Hugo site.
 		# For more informtion take a look at the README.
 		title = "Цены"
-		subtitle = "НьюСмайл предоставляет широкий спектр комплексных стоматологических услуг."
+		subtitle = "Копмлексное лечение и терпия"
 
 		[params.portfolio.magniodal]
             client = "Client"
