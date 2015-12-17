@@ -14,14 +14,16 @@
 		                {{ .Content }}
 		        	</div>
 		        </div>
+		        <div class="row">
+		        	<div class="col-lg-12 text-right">
+		        		<p/>
+				    	{{ range .Params.tags }}
+							<a href="/tags/{{ . | urlize }}"><i class="fa fa-hashtag fa-inverse"></i>&nbsp;{{ . }}</a>&nbsp;
+						{{ end }}
+		        	</div>
+		        </div>
 		    </div>
-		    <div>
-		    	<ul id="tags">
-				{{ range .Params.tags }}
-					<li><a href="tags/{{ . | urlize }}">{{ . }}</a> </li>
-				{{ end }}
-				</ul>
-			</div>
+		    
         </section>
         {{ partial "contact.html" . }}
         {{ partial "footer.html" . }}
