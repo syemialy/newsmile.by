@@ -1,5 +1,5 @@
 # Site settings
-#baseurl = "https://dl.dropboxusercontent.com/u/58497346"
+#baseurl = "http://syemialy.github.io/newsmile.by"
 languageCode = "ru-RU"
 title = "Ньюсмайл Стоматологическая Клиника г. Барановичи"
 theme = "hugo-agency-theme"
@@ -29,7 +29,7 @@ theme = "hugo-agency-theme"
     # - send a dummy email yourself to confirm your account
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
-	email = "your@email.com"
+	email = "nesmile.service@newsmile.by"
 
 
 	# Navigation

@@ -5,6 +5,7 @@
 </head>
     <body id="page-top" class="index">
         {{ partial "nav.html" . }}
+        {{ $baseUrl := .Site.BaseURL }}
         {{ partial "hero.html" . }}
         <section id="{{ .Title }}">
         	<div class="container">
@@ -17,8 +18,8 @@
 		        <div class="row">
 		        	<div class="col-lg-12 text-right">
 		        		<p/>
-				    	{{ range .Params.tags }}
-							<a href="/tags/{{ . | urlize }}"><i class="fa fa-hashtag fa-inverse"></i>&nbsp;{{ . }}</a>&nbsp;
+		        		{{ range .Params.tags }}
+							<a href="{{ $baseUrl }}tags/{{ . | urlize }}"><i class="fa fa-hashtag fa-inverse"></i>&nbsp;{{ . }}</a>&nbsp;
 						{{ end }}
 		        	</div>
 		        </div>
