@@ -18,9 +18,12 @@
 		        <div class="row">
 		        	<div class="col-lg-12 text-right">
 		        		<p/>
+		        		<span>
+		        			<i class="fa fa-hashtag"></i>:
 		        		{{ range .Params.tags }}
-							<a href="{{ $baseUrl }}tags/{{ . | urlize }}"><i class="fa fa-hashtag fa-inverse"></i>&nbsp;{{ . }}</a>&nbsp;
+							<a href="{{ $baseUrl }}tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
 						{{ end }}
+						</span>
 		        	</div>
 		        </div>
 		    </div>
