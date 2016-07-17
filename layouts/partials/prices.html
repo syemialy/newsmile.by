@@ -1,0 +1,36 @@
+{{ "<!-- Services -->" | safeHTML }}
+ <section id="price">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{{ with .Site.Params.price.title }}{{ . }}{{ end }}</h2>
+                <h3 class="section-subheading text-muted">{{ with .Site.Params.price.subtitle }}{{ . | markdownify }}{{ end }}</h3> 
+            </div>
+        </div>
+        <div class="row text-center">
+                <div class="table-responsive">          
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Услуга</th>
+                                <th>Цена бел. руб.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{ $url := .Site.Params.price.datafile }}
+                            {{ $sep := ";" }}
+                            {{ range $i, $r := getCSV $sep $url }}
+                            <tr>
+                              <td>{{ index $r 0 }}</td>
+                              <td class="text-left">{{ index $r 1 }}</td>
+                              <td class="text-right">{{ index $r 3 }}</td>
+                            </tr>
+                            {{ end }}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -55,20 +55,12 @@ theme = "hugo-agency-theme"
 			title="Услуги"
 			subtitle="НьюСмайл предоставляет широкий спектр комплексных стоматологических услуг."
 
-	# Portfolio section
-	[params.portfolio]
-		# All projects defined in their own files. You can find example projects
-		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
-		# at the root of this Hugo site.
-		# For more informtion take a look at the README.
+	# prices section
+	[params.price]
 		title = "Цены"
-		subtitle = "Копмлексное лечение и терпия"
+		datafile = "./static/csv/lechenie-05022016.csv"
+		description = "Цены на стоматологическое лечение в клинике HьюСмайл предоставлены в <!--more--> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-		[params.portfolio.magniodal]
-            client = "Client"
-            date = "Date"
-            category = "Category"
-            buttonText = "Close project"
 
 
     # About section
@@ -82,7 +74,7 @@ theme = "hugo-agency-theme"
 		# Replace them with your own.
 		[[params.about.events]]
 			img = "1.jpg"
-			date = "День 1<sup>й</sup>"
+			date = "Шаг 1<sup>й</sup>"
 			title = "Консультация"
 			description = "Пациенту проводится диагностическая консультация, которая включает сбор максимально полной объективной и субъективной информации о состоянии стоматологического здоровья"
 			reference = "service/consultation.md"
@@ -106,44 +98,7 @@ theme = "hugo-agency-theme"
 			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
 
-	# Team section
-	[params.team]
-		title = "Наши Специалисты"
-		subtitle = "Сегодня в нашей клинике вас обслуживают."
-		description = "Мы делаем все возможное для наших клиентов и гарантируем качественное и профессиональное обслуживание"
-
-		# All team member's pictures are stored under 'static/img/team'.
-		# Replace them with your own too.
-		[[params.team.members]]
-			img = "1.jpg"
-			name = "Игорь Варламов"
-			position = "Стоматолог"
-			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
-			]
-
-		[[params.team.members]]
-			img = "2.jpg"
-			name = "Алексей Соловьев"
-			position = "Терапевт"
-			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
-			]
-
-		[[params.team.members]]
-			img = "3.jpg"
-			name = "Вера Формига"
-			position = "Стоматолог"
-			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
-			]
-
+	
 	# Client section
 	# All the clients' logos are stored under 'static/img/logos'.
 	# Replace them with your clients's logos.
@@ -193,15 +148,15 @@ theme = "hugo-agency-theme"
 		copyright = "NewSmile Стоматология"
 
 		[[params.footer.social]]
+			icon = "fa-vk"
+			link = "#"
+
+		[[params.footer.social]]
 			icon = "fa-twitter"
 			link = "#"
 
 		[[params.footer.social]]
 			icon = "fa-facebook"
-			link = "#"
-
-		[[params.footer.social]]
-			icon = "fa-linkedin"
 			link = "#"
 
 		[[params.footer.quicklinks]]
