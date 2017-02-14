@@ -856,3 +856,12 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
+
+.table-nonfluid {
+   width: auto !important;
+}
+
+.wrapped-table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
